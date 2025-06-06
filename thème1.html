@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/thème1.css" />
+  <link rel="icon" href="ressources/logo.png" type="image/png" />
+</head>
+<body>
+
+  <!-- Logo -->
+  <div class="logo">
+    <a href="sommaire.html">
+      <img src="ressources/fléche.png" alt="Retour en arrière" />
+    </a>
+  </div>
+
+  <!-- Section texte + image -->
+  <section class="content-section">
+    <div class="text-content">
+      <h2>Mai 68 - Libération des moeurs</h2>
+      <p class="text_description">
+        Au printemps 1968, la jeunesse française se soulève contre l’ordre établi, et avec lui, contre une société jugée moralement rigide. L’intime devient politique, le corps un territoire de lutte et la sexualité un enjeu d’émancipation.
+        Dans les slogans comme dans les pratiques, on revendique la liberté d’aimer, de jouir, de refuser les normes traditionnelles du couple, du mariage ou de la famille. Mai 68 bouscule les interdits et favorise une parole plus libre sur le désir, le plaisir et le droit à disposer de soi.
+        À court terme, cette remise en cause des mœurs ouvre la voie à des transformations concrètes. La diffusion de la pilule contraceptive, autorisée en 1967, s’accélère. Les débats autour de l’avortement, encore interdit, émergent dans l’espace public. La société française amorce un basculement vers plus d’autonomie individuelle et de liberté sexuelle.
+        .
+      </p>
+    </div>
+    <div class="image-content">
+      <img src="ressources/thème1_img.jpg" alt="Mai 68" />
+    </div>
+  </section>
+
+  <!-- Vidéo -->
+  <video controls width="250" class="video">
+    <source src="ressources/video2.mp4" type="video/mp4" />
+    Votre navigateur ne supporte pas la vidéo.
+  </video>
+
+  <!-- Question -->
+  <h1 class="question">Envie de tester tes connaissances ?</h1>
+  <h2 class="texte2">Parmi ces 3 anecdotes, choisis la bonne réponse et passe au chapitre suivant</h2>
+
+ 
+ 
+  <div class="cards-container">
+    <!-- Mauvaise réponse 1 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <img src="ressources/icon.png" class="icon">
+          <h1>Anecdote 1</h1>
+          <p>Survol pour voir la suite</p>
+        </div>
+        <div class="flip-card-back">
+          <h2>La fidélité au sein du couple reste très importante pour les jeunes après mai 68.</h2>
+          <a href="#" class="flip-button wrong">Je choisis cette réponse</a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mauvaise réponse 2 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <img src="ressources/icon.png" class="icon">
+          <h1>Anecdote 2</h1>
+          <p>Survol pour voir la suite</p>
+        </div>
+        <div class="flip-card-back">
+          <h2>Le commencement de mai 68 se fait à cause d’une bagarre entre étudiants à Nanterre.</h2>
+          <a href="#" class="flip-button wrong">Je choisis cette réponse</a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Bonne réponse 3 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <img src="ressources/icon.png" class="icon">
+          <h1>Anecdote 3</h1>
+          <p>Survol pour voir la suite</p>
+        </div>
+        <div class="flip-card-back">
+          <h2>Avant mai 68, le terme vieille fille désignait une femme non mariée après 25 ans.</h2>
+          <a href="#" id="correctBtn" class="flip-button">Je choisis cette réponse</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- POPUPS -->
+  <div id="popup-success" class="popup-hidden">
+    <div class="popup-content">
+      <h2>🎉 Bravo !</h2>
+      <p>Bonne réponse.</p>
+      <a href="thème2.html" class="popup-button">Passer au chapitre suivant</a>
+    </div>
+  </div>
+  
+  <div id="popup-error" class="popup-hidden">
+    <div class="popup-content">
+      <h2>❌ Mauvaise réponse</h2>
+      <p>Ce n'était pas la bonne anecdote.</p>
+      <button onclick="closePopup()" class="popup-button">Réessayer</button>
+    </div>
+  </div>
+  
+  <script src="script2.js"></script>
+</body>
+</html>

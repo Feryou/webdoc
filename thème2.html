@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/thème2.css" />
+  <link rel="icon" href="ressources/logo.png" type="image/png" />
+</head>
+<body>
+
+  <!-- Logo -->
+  <div class="logo">
+    <a href="sommaire.html">
+      <img src="ressources/fléche.png" alt="Retour en arrière" />
+    </a>
+  </div>
+
+  <!-- Section texte + image -->
+  <section class="content-section">
+    <div class="text-content">
+      <h2>Libération des hommes ?</h2>
+      <p class="text_description">
+        Si Mai 68 a posé les bases d’une libération sexuelle, cette dernière a surtout profité aux hommes. Les figures du mouvement sont en majorité masculines, et les discours sur le plaisir ou l’émancipation restent largement portés par une vision masculine. Pour les femmes, cette soi-disant libération s’accompagne souvent de nouvelles injonctions : être libre, mais séduisante ; s’émanciper, sans contrarier le désir masculin.
+        Les appels à la jouissance absolue brouillent parfois les limites du consentement. Être une « femme libre » devient une attente, voire une norme, que beaucoup vivent comme une pression. Face à ces contradictions, des militantes commencent à se rassembler pour faire entendre une parole spécifiquement féminine. En 1970, la création du Mouvement de libération des femmes (MLF) marque un tournant : les luttes se structurent autour de revendications précises comme l’accès à la contraception, le droit à l’avortement (obtenu en 1975 avec la loi Veil), ou encore la dénonciation des violences sexistes.
+        Mai 68 a ouvert une brèche, mais c’est dans les années qui suivent que les combats féministes prennent toute leur ampleur.
+        
+      </p>
+    </div>
+    <div class="image-content">
+      <img src="ressources/thème2_img.jpeg" alt="Mai 68" />
+    </div>
+  </section>
+
+  <div class="podcast-center">
+    <div class="podcast-player">
+      <div class="podcast-info">
+        <h3>Extrait du podcast de France Culture - Combats de Femmes : De Mai 68 à #Metoo</h3>
+        <audio controls>
+          <source src="ressources/audio1.mp3" type="audio/mpeg">
+          Votre navigateur ne supporte pas l'audio.
+        </audio>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Question -->
+  <h1 class="question">Envie de tester tes connaissances ?</h1>
+  <h2 class="texte2">Parmi ces 3 anecdotes, choisis la bonne réponse et passe au chapitre suivant</h2>
+
+ 
+ 
+  <div class="cards-container">
+    <!-- Mauvaise réponse 1 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="ressources/icon.png" class="icon">
+          <h1>Anecdote 1</h1>
+          <p>Survol pour voir la suite</p>
+        </div>
+        <div class="flip-card-back">
+          <h2>Le Mouvement de libération des femmes s’est créé en 1970.</h2>
+          <a href="#" id="correctBtn" class="flip-button">Je choisis cette réponse</a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mauvaise réponse 2 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="ressources/icon.png" class="icon">
+          <h1>Anecdote 2</h1>
+          <p>Survol pour voir la suite</p>
+        </div>
+        <div class="flip-card-back">
+          <h2> Les discours prononcés sont souvent faits par des femmes.</h2>
+          <a href="#" class="flip-button wrong">Je choisis cette réponse</a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Bonne réponse 3 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="ressources/icon.png" class="icon">
+          <h1>Anecdote 3</h1>
+          <p>Survol pour voir la suite</p>
+        </div>
+        <div class="flip-card-back">
+          <h2>Être une « femme libre » ne pose pas de pression sur les épaules des femmes de cette époque.</h2>
+          <a href="#" class="flip-button wrong">Je choisis cette réponse</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- POPUPS -->
+  <div id="popup-success" class="popup-hidden">
+    <div class="popup-content">
+      <h2>🎉 Bravo !</h2>
+      <p>Bonne réponse.</p>
+      <a href="thème3.html" class="popup-button">Passer au chapitre suivant</a>
+    </div>
+  </div>
+  
+  <div id="popup-error" class="popup-hidden">
+    <div class="popup-content">
+      <h2>❌ Mauvaise réponse</h2>
+      <p>Ce n'était pas la bonne anecdote.</p>
+      <button onclick="closePopup()" class="popup-button">Réessayer</button>
+    </div>
+  </div>
+  
+  <script src="script2.js"></script>
+</body>
+</html>

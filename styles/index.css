@@ -1,0 +1,62 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background-video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(10px);
+  z-index: 0;
+  background: black;
+}
+
+.overlay {
+  z-index: 1;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+.bouton {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.bouton:hover {
+  background: white;
+  color: black;
+  border-color: black;
+}
